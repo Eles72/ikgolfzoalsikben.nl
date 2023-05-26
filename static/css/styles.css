@@ -73,7 +73,7 @@ em {
 }
 blockquote {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     padding:var(--space);
     background-color: #548bce;
     color:var(--c-primary);
