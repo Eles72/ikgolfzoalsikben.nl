@@ -1,8 +1,8 @@
 :root {
     --c-primary:#fff;
     --c-secondary:#231f20;
-    --c-tertiary: #ed1c24;
-    --c-highlight:#4db848;
+    --c-tertiary: #548bce;
+    --c-highlight:#3d9539;
 
     --space: 1em
 }
@@ -59,6 +59,11 @@ li > svg {
 img {
     max-width: 100%;
 }
+p img {
+    float:left;
+    width:200px;
+    padding-right: 1rem;
+}
 em {
     font-style: normal;
     font-weight:bold;
@@ -68,15 +73,16 @@ em {
 }
 blockquote {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding:var(--space);
-    background-color: var(--c-secondary);
+    background-color: #548bce;
     color:var(--c-primary);
     margin:0;
+    margin: -.5rem 0 0;
 }
 cite {
     display:block;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 header {
     display:flex;
@@ -114,11 +120,11 @@ nav a {
     align-items: flex-end;
     padding:var(--space) calc(var(--space));
     white-space: nowrap;
-    color:var(--c-secondary)
+    color:#1a4018;
+    font-size: 1rem;
 }
 nav a:hover {
-    background-color: var(--c-tertiary);
-    color: var(--c-primary);
+    background-color: #4db848;
 }
 nav a span {
     line-height:1
@@ -134,13 +140,15 @@ main > a {
     border-radius:.5rem;
     text-decoration: none;
     transition:.25s;
+    font-size: 1rem;
 }
 main > a:hover {
     background-color: var(--c-tertiary);
     color:var(--c-primary);
 }
 section {
-    margin:0
+    margin:0;
+    position: relative;
 }
 
 footer {
@@ -156,6 +164,15 @@ footer {
     width: 1px;
 }
 @media (min-width:50rem) {
+    blockquote {
+        position: absolute;
+        top:-3.75rem;
+        right:.5rem;
+        max-width:28rem;
+        margin:0
+    }
+}
+@media (min-width:50rem) {
     body {
         font-size: 1.25em;
     }
@@ -165,8 +182,6 @@ footer {
     h2 {
         font-size: 3rem;
     }
-    blockquote {
-        font-size: 2rem;
-    }
+
 }
 
